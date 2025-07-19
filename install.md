@@ -108,7 +108,7 @@ k9s
 📖 Docs: [https://k9scli.io/](https://k9scli.io/)
 
 ---
-🛠 Useful k9s Shortcuts & Tips
+## 🛠 Useful k9s Shortcuts & Tips
 
 | Key      | Description                                |
 | -------- | ------------------------------------------ |
@@ -120,6 +120,45 @@ k9s
 | `s`      | Shell into the selected pod                |
 | `Ctrl+a` | View all resources                         |
 | `q`      | Quit current view or exit k9s              |
+
+---
+
+## 🧑‍💻 Important MicroK8s Commands Cheat Sheet
+
+| Command                                             | Description                                                                                  |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `microk8s status --wait-ready`                      | Check if MicroK8s is up and ready                                                            |
+| `microk8s enable <addon>`                           | Enable Kubernetes add-ons (e.g., `dns`, `storage`, `ingress`, `metrics-server`, `dashboard`) |
+| `microk8s disable <addon>`                          | Disable a specific MicroK8s add-on                                                           |
+| `microk8s kubectl get nodes`                        | List all nodes in the cluster                                                                |
+| `microk8s kubectl get pods --all-namespaces`        | List all Pods running across all namespaces                                                  |
+| `microk8s kubectl get services`                     | List services in the current namespace                                                       |
+| `microk8s kubectl apply -f <file.yaml>`             | Apply a Kubernetes manifest file to create/update resources                                  |
+| `microk8s kubectl describe <resource> <name>`       | Show detailed info about a Kubernetes resource (pod, deployment, service, etc.)              |
+| `microk8s kubectl logs <pod-name>`                  | Fetch logs from a specific pod                                                               |
+| `microk8s kubectl exec -it <pod-name> -- /bin/bash` | Open an interactive shell inside a pod                                                       |
+| `microk8s kubectl delete <resource> <name>`         | Delete a Kubernetes resource                                                                 |
+| `microk8s kubectl get ingress`                      | List Ingress resources                                                                       |
+| `microk8s ctr image import <image.tar>`             | Import a Docker image tarball into MicroK8s container runtime                                |
+| `microk8s kubectl get hpa`                          | List Horizontal Pod Autoscalers                                                              |
+| `microk8s kubectl top pods`                         | Show resource (CPU/memory) usage for pods                                                    |
+| `microk8s kubectl get configmap`                    | List ConfigMaps                                                                              |
+| `microk8s kubectl get secret`                       | List Secrets                                                                                 |
+| `microk8s kubectl proxy`                            | Run local proxy to access Kubernetes API or dashboard                                        |
+| `microk8s reset`                                    | Completely reset the MicroK8s cluster (WARNING: destructive)                                 |
+
+---
+
+### 💡 Tips for Using These Commands
+
+* Prefix all `kubectl` commands with `microk8s` when using MicroK8s, or configure your local `kubectl` to use MicroK8s context.
+* Use `describe` and `logs` frequently for debugging Pods and Deployments.
+* Use `apply` to deploy or update resources declaratively.
+* To clean up resources safely, use `kubectl delete` with `--wait=true` to ensure proper teardown.
+* When testing network ingress, check the output of `microk8s kubectl get ingress` to verify routing.
+* Use `microk8s ctr image import` to manually load local Docker images into MicroK8s without pushing to a registry.
+
+---
 
 
 ## 📚 Core Kubernetes Concepts Used

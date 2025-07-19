@@ -1,4 +1,4 @@
-### created two helpful Bash scripts:
+### ⚙️ Created Two Helpful Bash Scripts:
 
 * `build-deploy.sh` for initial build, image loading, and deployment
 * `config-deploy.sh` for configuration reloads and HPA updates
