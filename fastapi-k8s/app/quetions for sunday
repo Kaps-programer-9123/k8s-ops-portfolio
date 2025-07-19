@@ -1,0 +1,87 @@
+can i delete node what i am running single
+if i delete how i can recover as its single node on my system using microk8s
+
+can i create 2 node group with this single system and allocate 50 50 cpu and memory to it
+
+
+=========================================================================================================
+
+tell me more on this -
+
+    helm                 # (core) Helm - the package manager for Kubernetes
+
+
+=========================================================================================================
+how below two can help me with auto delete cluster and and again re-ran for off business hr
+if i want to shut down node and again want to bring it back once sat sun is over and monday come (weekend off)
+
+:jobs
+What it is: Runs a one-time task like a script or batch job — not a long-running service.
+
+Why it matters: Useful for things like cleaning data, generating reports, database migrations, etc.
+
+What you do in k9s: Trigger, view output, or delete completed/failed jobs.
+
+:cronjobs
+What it is: Like Linux cron, this schedules recurring jobs (e.g., run every night at 1AM).
+
+Why it matters: Automate periodic tasks (like backups, API calls, emails) inside your cluster.
+
+What you do in k9s: Create or manage scheduled jobs.
+
+or any other entity i need to look at
+
+=========================================================================================================
+
+
+how i can manage this 
+
+🔐 :secrets — Sensitive config (like passwords and API keys)
+Same as ConfigMaps but encrypted (Base64). Use them for credentials and private tokens.
+
+Kubernetes treats them differently and stores them more securely.
+
+You can inject secrets into your pods via environment variables or files.
+
+🔧 Useful when:
+
+You're connecting to a database, API, or cloud provider.
+
+You want to keep sensitive information out of source code.
+
+what extra functionality need to deploy with app so my api key can be store as secrate 
+
+=========================================================================================================
+
+📁 :pvc — Storage your apps can write to
+A PVC (PersistentVolumeClaim) is how your app asks for disk space.
+
+If your app needs to save files, like uploads or database data, it uses a PVC.
+
+Kubernetes binds this claim to a physical disk (PersistentVolume).
+
+🔧 Useful when:
+
+You're deploying apps like WordPress, PostgreSQL, or media services.
+
+You want to keep data even if the pod restarts.
+
+how i can use this to store my file outside kubernates and can be access though file system...? correct me if i am wrong
+
+=========================================================================================================
+
+:configmaps	Store configuration data (like .env files) as key-value pairs.	Helps you keep settings separate from code: e.g., “API_URL=...” or “ENV=prod.”
+
+tell me more on this how it can help if i create fast api service how i can delivered config map with it 
+
+=========================================================================================================
+
+CoreDNS	DNS server for service discovery in the cluster.
+how i can enable service discovary for microk8 and what is use of it explain step by step
+
+=========================================================================================================
+
+
+
+
+
