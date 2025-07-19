@@ -104,10 +104,23 @@ Now you can use `kubectl` directly or `microk8s kubectl`.
 sudo snap install k9s
 k9s
 ```
-
+---
 📖 Docs: [https://k9scli.io/](https://k9scli.io/)
 
 ---
+🛠 Useful k9s Shortcuts & Tips
+
+| Key      | Description                                |
+| -------- | ------------------------------------------ |
+| `:`      | Command mode (e.g., `:pods`, `:nodes`)     |
+| `0`–`9`  | Switch between saved views                 |
+| `/`      | Search/filter resources                    |
+| `d`      | Describe selected resource (details/debug) |
+| `l`      | View logs of selected pod                  |
+| `s`      | Shell into the selected pod                |
+| `Ctrl+a` | View all resources                         |
+| `q`      | Quit current view or exit k9s              |
+
 
 ## 📚 Core Kubernetes Concepts Used
 
