@@ -10,7 +10,7 @@ Here's your `README.md` created **exactly as requested** — with no text change
 
 ### 📄 `README.md` (You can copy and paste the below directly):
 
-````markdown
+
 # 🚀 Getting Started with Helm – Kubernetes Package Management
 
 That's an excellent next step\! Helm is indispensable for managing Kubernetes applications. It helps you define, install, and upgrade even the most complex Kubernetes applications. Think of it as the "package manager for Kubernetes."
