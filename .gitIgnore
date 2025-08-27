@@ -1,0 +1,31 @@
+# .gitignore for Kubernetes and Helm projects
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails and other hidden macOS files
+._*
+
+# Build output files
+/dist
+/bin
+/target
+
+# IDEs or editors
+.idea/
+.vscode/
+*.swp
+
+# Node.js or other package manager directories
+node_modules/
+
+# Python (if applicable)
+__pycache__/
+*.pyc
+
+# Temporary files
+*.bak
+*.tmp
+*.swp
