@@ -171,6 +171,29 @@ Here’s a **comprehensive Minikube command reference** — starting from **begi
 
 ---
 
+kaps@Kapils-MacBook-Air ~ % minikube start --driver=docker --cpus=2 --memory=4g --disk-size=10g
+
+* 😄  minikube v1.36.0 on Darwin 15.5 (arm64)
+* ✨  Using the docker driver based on user configuration
+* 📌  Using Docker Desktop driver with root privileges
+* 👍  Starting "minikube" primary control-plane node in "minikube" cluster
+* 🚜  Pulling base image v0.0.47 ...
+* 💾  Downloading Kubernetes v1.33.1 preload ...
+*    > preloaded-images-k8s-v18-v1...:  327.15 MiB / 327.15 MiB  100.00% 3.71 Mi
+*    > gcr.io/k8s-minikube/kicbase...:  463.69 MiB / 463.69 MiB  100.00% 4.54 Mi
+* 🔥  Creating docker container (CPUs=2, Memory=4096MB) ...
+* 🐳  Preparing Kubernetes v1.33.1 on Docker 28.1.1 ...
+*    ▪ Generating certificates and keys ...
+*    ▪ Booting up control plane ...
+*    ▪ Configuring RBAC rules ...
+* 🔗  Configuring bridge CNI (Container Networking Interface) ...
+* 🔎  Verifying Kubernetes components...
+*    ▪ Using image gcr.io/k8s-minikube/storage-provisioner:v5
+* 🌟  Enabled addons: storage-provisioner, default-storageclass
+* 🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+
+---
+
 ## **1. Basic Commands (Beginner Level)**
 
 | Command                            | Description                                                         |
